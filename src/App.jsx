@@ -7,7 +7,10 @@ function App() {
 
   return (
     <div className="App">
-     
+           <div  id='main-container'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam consectetur quod cum suscipit natus quam praesentium laboriosam commodi, deserunt, fuga illo molestiae placeat facere exercitationem. Perferendis harum sunt corrupti perspiciatis!</div>
+           <div id='send-div'>
+
+           </div>
     </div>
   )
 }
