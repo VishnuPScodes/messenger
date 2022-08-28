@@ -29,7 +29,7 @@ export const messageReducer=((state=initState,action)=>{
                 ...state,
                 loading:false,
                 error:false,
-                data:[...state.data,payload]
+                data:[...state.data,action.payload]
             }
         }
         default :
