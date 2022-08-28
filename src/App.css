@@ -14,9 +14,14 @@
   max-width: 50rem;
   height: 50px;
   background-color: red;
- 
-  
-  bottom: 0;
-  
+  font-size: 5rem;
+}
+#button{
+ background-color:darkorange;
+ color: white;
+ padding: 1em 2em;
+ font-size: .2em;
+ border-radius: .5em;
+ border: none;
  
 }
