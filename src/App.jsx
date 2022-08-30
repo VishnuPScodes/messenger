@@ -5,6 +5,7 @@ import {useDispatch,useSelector} from 'react-redux';
 import { addMessageRequest, addMessageSuccess } from './redux/action';
 function App() {
   const [count, setCount] = useState(0);
+  const [current,setCurrent]=useState(null);
   const [message,setMessage]=useState('');
   const messages=useSelector(state=>state.data);
 
@@ -15,7 +16,15 @@ function App() {
   console.log(message);
   const dispatch=useDispatch();
   const handleSend=(()=>{
-    dispatch(addMessageSuccess(message))
+    if(message==current){
+      alert('Hey ,Dont send same message again,not needed')
+    }
+    else{
+      dispatch(addMessageSuccess(message));
+      setCurrent(message);
+    }
+
+   
   })
 
   console.log(messages);
@@ -24,8 +33,10 @@ function App() {
   return (
     <div className="App">
            <div  id='main-container'>
+            <div id='my-chat'>My chat-app</div>
+            <div style={{height:"50px"}}></div>
             <div id='display'>    {messages.map((e)=>{
-              return <div>{e}</div>
+              return <div id='single-message'>{e}</div>
             })}</div>
             <div id='send-div'> <input type="text" onChange={handleChange} placeholder='add your message' />   <button id='button' disabled={message==''} onClick={handleSend}>Send</button>
 

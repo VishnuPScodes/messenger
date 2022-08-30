@@ -7,14 +7,43 @@
 }
 #display{
   max-width:10em ;
-  min-height: 20em;
+  min-height: 3em;
   background-color: aqua;
+  
+  word-wrap: break-word;
+ 
+
+}
+#single-message{
+  min-width: 10em;
+  background-color: greenyellow;
+  text-align: left;
+  border-radius: 50px;
+  margin-top: 15px;
+  font-size: .4em;
+  
+}
+::selection {
+  color: #ffffff;
+  background-color: red;
 }
 #send-div{
   max-width: 50rem;
   height: 50px;
   background-color: red;
   font-size: 5rem;
+}
+#my-chat{
+  max-width: 50em;
+  height:50px;
+  background-color: red;
+  color: white;
+  position: fixed;
+  top: 1%;
+  font-size: .4em;
+  text-align: center;
+  font-family: cursive;
+  
 }
 #button{
  background-color:darkorange;
@@ -23,5 +52,6 @@
  font-size: .2em;
  border-radius: .5em;
  border: none;
+ 
  
 }
