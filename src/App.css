@@ -21,6 +21,7 @@
   border-radius: 50px;
   margin-top: 15px;
   font-size: .4em;
+  font-weight: 300;
   
 }
 ::selection {
@@ -46,12 +47,19 @@
   
 }
 #button{
- background-color:darkorange;
+ background-color:red;
  color: white;
  padding: 1em 2em;
  font-size: .2em;
- border-radius: .5em;
+ border-radius:1.4em;
  border: none;
+ font-family: cursive;
  
- 
+}
+#input{
+  border: 2px solid red;
+ height: 30px;
+ border-radius: 20px;
+ color: red;
+ font-family: cursive;
 }
