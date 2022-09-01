@@ -8,20 +8,23 @@
 #display{
   max-width:10em ;
   min-height: 3em;
-  background-color: aqua;
+  background-color: white;
   
   word-wrap: break-word;
  
 
 }
 #single-message{
-  min-width: 10em;
-  background-color: greenyellow;
+  min-width: .1rem;
+  background-color: white;
   text-align: left;
   border-radius: 50px;
   margin-top: 15px;
-  font-size: .4em;
+  font-size: .2em;
   font-weight: 300;
+  color: red;
+  font-family: cursive;
+  
   
 }
 ::selection {
