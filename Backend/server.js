@@ -1,12 +1,14 @@
 
 
-const cors=require('cors');
+//const cors=require('cors');
+import cors from 'cors'
 
-const bodyParser=require('body-parser')
-
-const express=require('express')
-
-const mongoose=require('mongoose');
+//const bodyParser=require('body-parser')
+import bodyParser from 'body-parser'
+//const express=require('express')
+import express from 'express'
+//const mongoose=require('mongoose');
+import mongoose from 'mongoose'
 import router from './routes/messageRoute.js'
 
 

@@ -23,9 +23,13 @@ function App() {
       dispatch(addMessageSuccess(message));
       setCurrent(message);
     }
+    let btn=document.getElementById('input').value='';
 
    
   })
+  const handleKey=(e)=>{
+    console.log('yesss')
+  }
 
   console.log(messages);
 
@@ -38,7 +42,7 @@ function App() {
             <div id='display'>    {messages.map((e)=>{
               return <div id='single-message'>{e}</div>
             })}</div>
-            <div id='send-div'> <input id='input' type="text" onChange={handleChange} placeholder='add your message...' />   <button id='button' disabled={message==''} onClick={handleSend}>Send</button>
+            <div id='send-div'> <input onKeyUp={handleKey} id='input' type="text" onChange={handleChange} placeholder='add your message...' />   <button id='button' disabled={message==''} onClick={handleSend}>Send</button>
 
 </div>
        </div>
